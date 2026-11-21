@@ -1,0 +1,696 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Nazwa Sharifa Aprilia Patty (Wawa) · Portfolio &amp; CV</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Custom Configuration -->
+<script>
+    tailwind.config = {theme: {extend: {colors: {paper: "#F4F3F1", burgundy: "#8E0E2B", starburst: "#FBE94B", darkink: "#2B1117", "on-surface": "#2e1a28", "on-error-container": "#9b1c1c", "outline-variant": "#dcc8e0", "error-container": "#ffe8e8", "on-tertiary": "#ffffff", "on-background": "#2e1a28", "on-primary-container": "#2e1a28", "on-secondary-container": "#2e2040", "on-secondary": "#ffffff", primary: "#e040a0", "surface-tint": "#e040a0", "on-primary": "#ffffff", "tertiary-fixed-dim": "#80d0f0", "on-tertiary-fixed-variant": "#005580", "surface-container-low": "#fbf2fb", background: "#fef7ff", surface: "#fef7ff", "on-secondary-fixed": "#1a1030", "on-tertiary-fixed": "#001a33", "tertiary-container": "#40c0ee", "surface-container-highest": "#ece2ec", "surface-container-high": "#f2e8f2", tertiary: "#0096cc", "on-secondary-fixed-variant": "#4a3068", "on-tertiary-container": "#00334d", "inverse-on-surface": "#fef7ff", outline: "#907898", "primary-fixed": "#ffd6ee", "surface-container-lowest": "#ffffff", "secondary-container": "#eedcff", error: "#e53e3e", "inverse-surface": "#2e1a28", "surface-dim": "#e0d6e0", "secondary-fixed": "#eedcff", "primary-fixed-dim": "#f0a0cc", "on-primary-fixed-variant": "#a02070", "primary-container": "#f080c0", secondary: "#7c52aa", "secondary-fixed-dim": "#c8a8e8", "surface-bright": "#fef7ff", "tertiary-fixed": "#c8eaff", "surface-variant": "#f2e8f2", "on-surface-variant": "#604868", "surface-container": "#f8eef8", "on-primary-fixed": "#3d0028", "inverse-primary": "#f0a0cc", "on-error": "#ffffff"}, fontFamily: {display: ["DM Sans"], bubble: ["Fredoka", "sans-serif"], body: ["DM Sans"], hand: ["Caveat", "cursive"], headline: ["DM Sans"], label: ["DM Sans"]}, borderWidth: {"1.5": "1.5px"}, borderColor: {burgundy: "#8E0E2B"}, fontSize: {}, borderRadius: {DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px"}}}}
+  </script>
+<!-- Custom Typography & Decorative Styles -->
+<style data-purpose="typography">
+    .font-syne { font-family: 'Syne', sans-serif; }
+    .font-fredoka { font-family: 'Fredoka', sans-serif; }
+    .font-caveat { font-family: 'Caveat', cursive; }
+    .font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+<!-- Custom Starburst & Zine Poster Layout Elements -->
+<style data-purpose="zine-elements">
+    /* 14-point polygon starburst clip-path */
+    .starburst-badge {
+      clip-path: polygon(
+        50% 0%, 62% 14%, 79% 6%, 83% 24%, 98% 28%,
+        91% 45%, 100% 60%, 88% 72%, 91% 90%, 73% 89%,
+        64% 100%, 50% 90%, 36% 100%, 27% 89%, 9% 90%,
+        12% 72%, 0% 60%, 9% 45%, 2% 28%, 17% 24%,
+        21% 6%, 38% 14%
+      );
+    }
+    
+    /* Halftone dot pattern background overlay */
+    .halftone-bg {
+      background-image: radial-gradient(#8E0E2B 0.75px, transparent 0.75px);
+      background-size: 8px 8px;
+      opacity: 0.12;
+    }
+
+    /* Foam tray sticker dish container */
+    .foam-tray {
+      background: linear-gradient(145deg, #ECEAE6 0%, #dedbd4 100%);
+      box-shadow: 
+        inset 0 2px 4px rgba(255,255,255,0.8),
+        inset 0 -4px 6px rgba(0,0,0,0.1),
+        0 14px 28px -6px rgba(142, 14, 43, 0.18),
+        0 6px 12px -2px rgba(0, 0, 0, 0.08);
+      border: 1.5px solid rgba(142, 14, 43, 0.25);
+      transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.45s ease;
+      perspective: 800px;
+    }
+
+    .tray-stage:hover .foam-tray {
+      transform: translateY(-6px) rotate(-1deg) scale(1.02);
+      box-shadow: 
+        inset 0 2px 4px rgba(255,255,255,0.9),
+        inset 0 -4px 6px rgba(0,0,0,0.08),
+        0 22px 38px -8px rgba(142, 14, 43, 0.22),
+        0 10px 18px -4px rgba(43, 17, 23, 0.12);
+    }
+
+    /* Wiggle keyframes for USED badge */
+    @keyframes zineWiggle {
+      0%, 100% { transform: rotate(-12deg) scale(1); }
+      25% { transform: rotate(-18deg) scale(1.08); }
+      75% { transform: rotate(-6deg) scale(1.08); }
+    }
+
+    .animate-badge-wiggle {
+      animation: zineWiggle 3.2s infinite ease-in-out;
+      transform-origin: center center;
+    }
+
+    .tray-stage:hover .animate-badge-wiggle {
+      animation-duration: 1.2s;
+    }
+
+    /* Lettuce garnish gentle bob animation */
+    @keyframes lettuceBob {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-3px) rotate(4deg); }
+    }
+
+    .lettuce-leaf {
+      animation: lettuceBob 4s ease-in-out infinite;
+    }
+
+    /* Die-cut icon sticker effect */
+    .app-sticker {
+      filter: drop-shadow(0 4px 6px rgba(43, 17, 23, 0.2));
+      transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+      position: relative;
+      touch-action: manipulation;
+      user-select: none;
+    }
+
+    .app-sticker:hover,
+    .app-sticker:focus-visible {
+      transform: translateY(-8px) scale(1.18) rotate(0deg) !important;
+      filter: drop-shadow(0 14px 20px rgba(43, 17, 23, 0.28)) drop-shadow(0 2px 4px rgba(142, 14, 43, 0.25));
+      z-index: 40 !important;
+      outline: none;
+    }
+
+    .app-sticker:active {
+      transform: translateY(-2px) scale(0.95) !important;
+      transition-duration: 0.08s;
+    }
+
+    /* Active clicked feedback ping */
+    .sticker-pressed {
+      animation: stickerPop 0.4s ease-out;
+    }
+
+    @keyframes stickerPop {
+      0% { transform: scale(0.92); }
+      50% { transform: scale(1.22); }
+      100% { transform: scale(1.18); }
+    }
+
+    /* Highlight class for callouts triggered by sticker hover */
+    .callout-active {
+      color: #8E0E2B !important;
+      font-weight: 800 !important;
+      text-shadow: 0 0 1px rgba(142, 14, 43, 0.6);
+      transform: scale(1.05);
+      transition: all 0.2s ease;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .foam-tray, .app-sticker, .lettuce-leaf, .animate-badge-wiggle {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-paper text-darkink font-jakarta antialiased min-h-screen selection:bg-starburst selection:text-burgundy">
+<!-- BEGIN: MainContainer -->
+<div class="max-w-[1240px] mx-auto px-3 sm:px-6 lg:px-8 py-6 md:py-10">
+<!-- BEGIN: TopPosterSheet -->
+<!-- Authentic Editorial Poster Board Frame matching reference CV format -->
+<main class="bg-paper border-[2px] border-burgundy shadow-[0_12px_36px_rgba(142,14,43,0.12)] rounded-sm overflow-hidden mb-12" data-purpose="editorial-cv-poster">
+<div class="grid grid-cols-1 lg:grid-cols-12 relative">
+<!-- ============================================== -->
+<!-- LEFT COLUMN: Identity, Contact, Portrait Photo -->
+<!-- ============================================== -->
+<!-- BEGIN: LeftColumn -->
+<section class="lg:col-span-5 relative p-6 sm:p-8 border-b-[2px] lg:border-b-0 lg:border-r-[2px] border-burgundy flex flex-col justify-between overflow-hidden" data-purpose="left-identity-column">
+<!-- Background Stippled Halftone Texture Area -->
+<div aria-hidden="true" class="absolute inset-0 halftone-bg pointer-events-none"></div>
+<!-- Upper Header Area -->
+<div class="relative z-10">
+<!-- Hand-drawn Style "hello!" -->
+<div class="relative inline-block mb-1">
+<span class="font-bubble text-burgundy text-6xl sm:text-7xl font-extrabold tracking-tight transform -rotate-3 block origin-bottom-left select-none drop-shadow-sm">
+                hello!
+              </span>
+<!-- Fun decorative hand sparkle -->
+<span class="absolute -top-3 -right-6 font-caveat text-2xl text-burgundy rotate-12 font-bold select-none">✦</span>
+</div>
+<!-- "i'm" with double underline and Display Name WAWA -->
+<div class="flex items-center gap-3 mt-1 mb-2">
+<div class="relative">
+<span class="font-bubble text-burgundy text-2xl sm:text-3xl font-bold tracking-tight">i'm</span>
+<div class="w-full border-b-[2.5px] border-burgundy mt-[-2px]"></div>
+<div class="w-full border-b-[1.5px] border-burgundy mt-[2px]"></div>
+</div>
+<!-- WAWA Wordmark Logo -->
+<img alt="Wawa Wordmark Logo" class="h-16 sm:h-20 w-auto object-contain select-none -rotate-1 hover:rotate-1 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU_fmF-PtVsNTBVY39Q44D2sRVxn8xtkYwp__BkVmVa6Wmbh0Fo_unK2gCOgA5-PRthTws4BmnC-n_RS_BmY2icsimH6dyK7mEM__I-MiWI5fgr_EUs6ua_7ophJsOJwbnMKREtaDDt05Wxf3TNN7BMAgWFZ5gqmPeBBBJO6M4EXCbXTS-oHIoB8HWtZ0v_XeKckjvz1jgyzkv_VF02U6QV2cQlGPJnPKZdCEyXWY">
+</div>
+<!-- Role Badge / Subtitle -->
+<div class="mt-2 inline-flex items-center gap-1.5 bg-burgundy text-white px-3 py-1 rounded-sm text-xs sm:text-sm font-semibold tracking-wide">
+<span>Information System Undergraduate</span>
+<span>·</span>
+<span class="text-starburst font-bold">ITPLN Jakarta</span>
+</div>
+</div>
+<!-- Mid Section: Framed B&W Portrait with Editorial Graphic Pointers -->
+<div class="relative z-10 my-8 flex flex-col items-center">
+<!-- Graphic Label with pointer line -->
+<div class="self-start ml-2 mb-1 flex items-end gap-1">
+<span class="font-bubble text-burgundy text-sm sm:text-base font-bold tracking-wider uppercase">INFORMATION</span>
+<svg class="w-6 h-6 text-burgundy" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M4 4 L18 18 M18 18 L10 18 M18 18 L18 10"></path>
+</svg>
+</div>
+<!-- Portrait Photo with white mat border & shadow -->
+<div class="relative group">
+<div class="bg-white p-2.5 sm:p-3 pb-8 border border-burgundy/40 shadow-xl rounded-sm transition-transform duration-300 group-hover:rotate-0 -rotate-1 max-w-[290px] sm:max-w-[320px]">
+<img alt="Black and white candid portrait photo of Nazwa Sharifa Aprilia Patty (Wawa)" class="w-full h-auto aspect-square object-cover grayscale contrast-125 rounded-none border border-burgundy/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUi5wLRNveHFHy1X3Eb5jiyZaSvcxdu-BlVG-cxDLuRCltOD3nrr_N4_HXrS7UZv64zlmDU-UAWFMpgZF_0YlWH7w5eui89tmbZnSTbQS8_7aWfSelOIYMRPpB9WjaIpi6wmqQ1sYzVPLtcrLjE496HFRfZukcMFJhYYqbe1f83ai2CXhyFiYBny81tqZ_ih0GbIHwYMJa1TPc1Ls20pIpfGc0xL3x53JUl38umirhx-J8FpgileNE">
+<div class="mt-2 text-center">
+<span class="font-caveat text-sm font-bold text-burgundy">Nazwa Sharifa (Wawa) · 2026</span>
+</div>
+</div>
+</div>
+<!-- System Label with pointer line -->
+<div class="self-end mr-4 mt-1 flex items-start gap-1">
+<svg class="w-6 h-6 text-burgundy" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M20 20 L6 6 M6 6 L14 6 M6 6 L6 14"></path>
+</svg>
+<span class="font-bubble text-burgundy text-sm sm:text-base font-bold tracking-wider uppercase">loving<br>b &amp; w</span>
+</div>
+</div>
+<!-- Bottom: Contact Details Section -->
+<div class="relative z-10 pt-4 border-t-1.5 border-burgundy/60">
+<h2 class="font-bubble text-burgundy text-xl font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
+              CONTACT
+              <span class="h-0.5 flex-1 bg-burgundy/40"></span>
+</h2>
+<ul class="space-y-1.5 text-xs sm:text-sm font-medium">
+<li class="flex items-center gap-2 text-darkink hover:text-burgundy transition-colors">
+<span class="font-caveat text-base text-burgundy font-bold">✉</span>
+<a class="font-semibold underline decoration-burgundy/50 underline-offset-2 hover:decoration-burgundy" href="mailto:nazwapatty4@gmail.com">
+                  nazwapatty4@gmail.com
+                </a>
+</li>
+<li class="flex items-center gap-2 text-darkink">
+<span class="font-caveat text-base text-burgundy font-bold">📍</span>
+<span>Ambon, Maluku / Jakarta, Indonesia</span>
+</li>
+<li class="flex items-center gap-2 text-darkink">
+<span class="font-caveat text-base text-burgundy font-bold">★</span>
+<span>Instagram: <span class="font-semibold text-burgundy">@nazwaptty</span></span>
+</li>
+</ul>
+<!-- Graphic red bar accent from original inspiration -->
+<div class="mt-3 flex items-center gap-2">
+<span class="text-xs font-mono font-semibold text-burgundy">+62 895-XXXX-XXXX</span>
+<div class="h-3 w-16 bg-burgundy rounded-xs"></div>
+</div>
+</div>
+</section>
+<!-- END: LeftColumn -->
+<!-- ============================================== -->
+<!-- RIGHT COLUMN: Stacked Zine Editorial Panels   -->
+<!-- ============================================== -->
+<!-- BEGIN: RightColumn -->
+<section class="lg:col-span-7 flex flex-col justify-between" data-purpose="right-content-panels">
+<!-- PANEL 1: PERSONAL SUMMARY -->
+<!-- BEGIN: PanelPersonal -->
+<article class="p-6 sm:p-7 border-b-1.5 border-burgundy bg-paper relative" data-purpose="section-personal">
+<h2 class="font-bubble text-burgundy text-2xl sm:text-3xl font-extrabold uppercase tracking-wide mb-3 flex items-center gap-3">
+              PERSONAL
+              <span class="w-12 h-1 bg-burgundy rounded-full hidden sm:inline-block"></span>
+</h2>
+<p class="text-xs sm:text-sm md:text-base leading-relaxed text-darkink font-normal text-justify">
+              Hi, I'm <strong class="font-semibold text-burgundy">Nazwa Sharifa Aprilia Patty</strong> — feel free to call me <strong class="font-semibold text-burgundy">Wawa</strong>! Undergraduate student in the Information System study program at the Faculty of Telematics and Energy, <strong class="font-semibold">Institut Teknologi PLN (ITPLN) Jakarta</strong>. Passionate about bridging technology, structured organization, and creative digital solutions. Experienced in managing organizational budgeting, analytical administration, and visual media communication.
+            </p>
+</article>
+<!-- END: PanelPersonal -->
+<!-- PANEL 2: SOFTWARE & TOOLS (FOAM TRAY ZINE ARTIFACT) -->
+<!-- BEGIN: PanelSoftware -->
+<article class="p-6 sm:p-7 border-b-1.5 border-burgundy relative bg-paper overflow-hidden select-none" data-purpose="section-software">
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-bubble text-burgundy text-2xl sm:text-3xl font-extrabold uppercase tracking-wide">
+                SOFTWARE
+              </h2>
+<span class="font-caveat text-burgundy text-lg font-bold">toolkit &amp; creative gear ✦</span>
+</div>
+<!-- Foam Bento Tray Container with App Stickers (.tray-stage) -->
+<div class="tray-stage relative py-5 flex items-center justify-center">
+<!-- Tray Wrapper (Tilted rounded container) -->
+<div class="foam-tray relative w-full max-w-[430px] rounded-3xl p-5 sm:p-6 transform -rotate-3">
+<!-- Garnish Lettuce accent in corner (reference tribute) with subtle bob -->
+<div aria-hidden="true" class="lettuce-leaf absolute -bottom-2.5 -right-2.5 w-14 h-14 bg-emerald-600/80 rounded-full blur-[0.5px] opacity-85 pointer-events-none flex items-center justify-center text-emerald-100 text-xs font-bold border-2 border-emerald-300 z-10 shadow-md">
+<span class="text-xl">🥬</span>
+</div>
+<!-- Starburst Sticker "USED" top-left with continuous subtle wiggle & hover acceleration -->
+<div class="absolute -top-4 -left-4 z-30">
+<div class="starburst-badge animate-badge-wiggle bg-starburst text-burgundy w-16 h-16 sm:w-18 sm:h-18 flex items-center justify-center font-bubble font-black text-xs sm:text-sm drop-shadow-md cursor-pointer hover:scale-115 transition-transform" title="Tools regularly used in projects &amp; coursework">
+                    USED
+                  </div>
+</div>
+<!-- Overlapping Die-Cut App Stickers Grid with dynamic peel hover effects & floating tooltips -->
+<div class="grid grid-cols-3 gap-3 sm:gap-4 items-center justify-items-center relative z-20 pt-2" id="sticker-grid">
+<!-- Microsoft Excel Sticker -->
+<div class="group relative" data-category="data-office">
+<button aria-label="Microsoft Excel: Financial Models and Ledgers" class="app-sticker bg-white border-2 border-white rounded-xl p-2.5 shadow-md flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-emerald-500 to-green-700 text-white font-black text-center -rotate-2 focus:outline-none" data-info="Excel · Financial Models &amp; Ledgers" type="button">
+<span class="text-xs uppercase font-syne font-bold tracking-tight">Excel</span>
+<span class="text-xl">📊</span>
+</button>
+<!-- Floating Tooltip Pill -->
+<div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-200 z-50 whitespace-nowrap bg-darkink text-white border border-starburst text-[10px] sm:text-xs font-bubble font-semibold px-2 py-0.5 rounded-full shadow-lg scale-90 group-hover:scale-100 group-focus-within:scale-100">
+                    Excel — Financial Models &amp; Ledgers
+                  </div>
+</div>
+<!-- Figma Sticker -->
+<div class="group relative" data-category="ui-design">
+<button aria-label="Figma: UI Wireframing and Components" class="app-sticker bg-white border-2 border-white rounded-xl p-2.5 shadow-md flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-[#1E1E1E] text-white font-bold rotate-1 focus:outline-none" data-info="Figma · UI Wireframing &amp; Components" type="button">
+<span class="text-xs uppercase font-syne text-[#F24E1E]">FIGMA</span>
+<span class="text-lg">✦</span>
+</button>
+<!-- Floating Tooltip Pill -->
+<div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-200 z-50 whitespace-nowrap bg-darkink text-white border border-starburst text-[10px] sm:text-xs font-bubble font-semibold px-2 py-0.5 rounded-full shadow-lg scale-90 group-hover:scale-100 group-focus-within:scale-100">
+                    Figma — UI Wireframing &amp; Components
+                  </div>
+</div>
+<!-- Canva Sticker -->
+<div class="group relative" data-category="ui-design">
+<button aria-label="Canva: Social Visuals and Infographics" class="app-sticker bg-white border-2 border-white rounded-xl p-2.5 shadow-md flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-tr from-[#00C4CC] to-[#7D2AE8] text-white font-extrabold -rotate-1 focus:outline-none" data-info="Canva · Social Visuals &amp; Infographics" type="button">
+<span class="font-bubble text-sm">Canva</span>
+</button>
+<!-- Floating Tooltip Pill -->
+<div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-200 z-50 whitespace-nowrap bg-darkink text-white border border-starburst text-[10px] sm:text-xs font-bubble font-semibold px-2 py-0.5 rounded-full shadow-lg scale-90 group-hover:scale-100 group-focus-within:scale-100">
+                    Canva — Social Visuals &amp; Infographics
+                  </div>
+</div>
+<!-- Notion Sticker -->
+<div class="group relative" data-category="productivity">
+<button aria-label="Notion: Workspace and Knowledge Base" class="app-sticker bg-white border-2 border-white rounded-xl p-2.5 shadow-md flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-zinc-900 text-white font-bold rotate-2 focus:outline-none" data-info="Notion · Workspace &amp; Knowledge Base" type="button">
+<span class="font-syne text-xs uppercase text-amber-200">Notion</span>
+<span class="text-sm">📋</span>
+</button>
+<!-- Floating Tooltip Pill -->
+<div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-200 z-50 whitespace-nowrap bg-darkink text-white border border-starburst text-[10px] sm:text-xs font-bubble font-semibold px-2 py-0.5 rounded-full shadow-lg scale-90 group-hover:scale-100 group-focus-within:scale-100">
+                    Notion — Workspace &amp; Knowledge Base
+                  </div>
+</div>
+<!-- CapCut Sticker -->
+<div class="group relative" data-category="ui-design">
+<button aria-label="CapCut: Video Reels and Motion" class="app-sticker bg-white border-2 border-white rounded-xl p-2.5 shadow-md flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-neutral-950 text-white font-bold -rotate-2 focus:outline-none" data-info="CapCut · Video Reels &amp; Motion" type="button">
+<span class="font-syne text-xs uppercase">CapCut</span>
+<span class="text-sm">✂️</span>
+</button>
+<!-- Floating Tooltip Pill -->
+<div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-200 z-50 whitespace-nowrap bg-darkink text-white border border-starburst text-[10px] sm:text-xs font-bubble font-semibold px-2 py-0.5 rounded-full shadow-lg scale-90 group-hover:scale-100 group-focus-within:scale-100">
+                    CapCut — Video Reels &amp; Motion
+                  </div>
+</div>
+<!-- HTML/CSS Code Sticker -->
+<div class="group relative" data-category="ui-design">
+<button aria-label="HTML and CSS: Web Prototyping Basics" class="app-sticker bg-white border-2 border-white rounded-xl p-2.5 shadow-md flex flex-col items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-burgundy text-starburst font-black rotate-1 focus:outline-none" data-info="HTML/CSS · Web Prototyping Basics" type="button">
+<span class="font-mono text-xs font-bold">&lt;/&gt;</span>
+<span class="text-[10px] tracking-tight uppercase text-white font-syne">Web Dev</span>
+</button>
+<!-- Floating Tooltip Pill -->
+<div class="pointer-events-none absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-200 z-50 whitespace-nowrap bg-darkink text-white border border-starburst text-[10px] sm:text-xs font-bubble font-semibold px-2 py-0.5 rounded-full shadow-lg scale-90 group-hover:scale-100 group-focus-within:scale-100">
+                    HTML/CSS — Web Prototyping
+                  </div>
+</div>
+</div>
+<!-- Dynamic Active Sticker Toast / Feedback Indicator -->
+<div aria-live="polite" class="mt-3 text-center transition-all duration-300 min-h-[22px]" id="sticker-toast-container">
+<span class="inline-block text-[11px] sm:text-xs font-caveat font-bold text-burgundy bg-starburst/70 px-2.5 py-0.5 rounded-full border border-burgundy/30 transition-all opacity-90" id="sticker-toast-text">
+                    ✦ peel &amp; click stickers to preview skills
+                  </span>
+</div>
+</div>
+<!-- Editorial Pointer Line Callouts with Dynamic Highlight hooks -->
+<div class="hidden sm:block absolute right-2 top-2 text-right pointer-events-none">
+<span class="font-caveat text-sm font-bold text-burgundy/80 transition-colors duration-200 block" id="callout-data-office">data &amp; office ──┐</span>
+</div>
+<div class="hidden sm:block absolute left-2 bottom-3 text-left pointer-events-none">
+<span class="font-caveat text-sm font-bold text-burgundy/80 transition-colors duration-200 block" id="callout-ui-design">└── ui / design &amp; code</span>
+</div>
+<div class="hidden sm:block absolute right-3 bottom-1 text-right pointer-events-none">
+<span class="font-caveat text-sm font-bold text-burgundy/80 transition-colors duration-200 block" id="callout-productivity">productivity ↗</span>
+</div>
+</div>
+</article>
+<!-- END: PanelSoftware -->
+<!-- PANEL 3: EXPERIENCE -->
+<!-- BEGIN: PanelExperience -->
+<article class="p-6 sm:p-7 border-b-1.5 border-burgundy relative bg-paper" data-purpose="section-experience">
+<h2 class="font-bubble text-burgundy text-2xl sm:text-3xl font-extrabold uppercase tracking-wide mb-4">
+              EXPERIENCE
+            </h2>
+<!-- Timeline Structure with Starburst Nodes -->
+<div class="relative pl-6 sm:pl-8 border-l-2 border-burgundy space-y-6 ml-3 my-2">
+<!-- Item 1: PMR General Treasurer -->
+<div class="relative group">
+<!-- Starburst Badge Node -->
+<div class="absolute -left-[35px] sm:-left-[43px] top-0">
+<div class="starburst-badge bg-starburst text-burgundy w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bubble font-black text-[10px] sm:text-xs drop-shadow-sm group-hover:scale-110 transition-transform">
+                    '23-25
+                  </div>
+</div>
+<div class="bg-white/80 border border-burgundy/30 p-3.5 rounded-sm shadow-sm">
+<div class="flex flex-wrap items-baseline justify-between gap-1">
+<h3 class="font-bubble text-base sm:text-lg text-burgundy font-bold">
+                      Red Cross Teen (PMR) — Palang Merah Remaja
+                    </h3>
+<span class="text-xs font-bold text-burgundy/80 font-mono">2023 – 2025</span>
+</div>
+<p class="text-xs sm:text-sm font-semibold text-darkink/90 mt-0.5">
+                    General Treasurer (Bendahara Umum)
+                  </p>
+<p class="text-xs sm:text-sm text-darkink/80 mt-1.5 leading-relaxed">
+                    Managed organizational budgeting, transparent cashflow accounting, fundraising initiatives, and fund distribution for school health services, humanitarian drills, and youth leadership training.
+                  </p>
+</div>
+</div>
+<!-- Item 2: ITPLN Student Organization & Academic Projects -->
+<div class="relative group">
+<!-- Starburst Badge Node -->
+<div class="absolute -left-[35px] sm:-left-[43px] top-0">
+<div class="starburst-badge bg-starburst text-burgundy w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bubble font-black text-[10px] sm:text-xs drop-shadow-sm group-hover:scale-110 transition-transform">
+                    2026
+                  </div>
+</div>
+<div class="bg-white/80 border border-burgundy/30 p-3.5 rounded-sm shadow-sm">
+<div class="flex flex-wrap items-baseline justify-between gap-1">
+<h3 class="font-bubble text-base sm:text-lg text-burgundy font-bold">
+                      Information System Student Community (ITPLN)
+                    </h3>
+<span class="text-xs font-bold text-burgundy/80 font-mono">2026 – Present</span>
+</div>
+<p class="text-xs sm:text-sm font-semibold text-darkink/90 mt-0.5">
+                    Active Member &amp; Academic Project Contributor
+                  </p>
+<p class="text-xs sm:text-sm text-darkink/80 mt-1.5 leading-relaxed">
+                    Engaged in faculty workshops on enterprise databases, IT system modeling, and collaborative UI/UX application prototyping.
+                  </p>
+</div>
+</div>
+</div>
+</article>
+<!-- END: PanelExperience -->
+<!-- PANEL 4: EDUCATION -->
+<!-- BEGIN: PanelEducation -->
+<article class="p-6 sm:p-7 relative bg-paper" data-purpose="section-education">
+<h2 class="font-bubble text-burgundy text-2xl sm:text-3xl font-extrabold uppercase tracking-wide mb-4">
+              EDUCATION
+            </h2>
+<div class="space-y-4">
+<!-- ITPLN -->
+<div class="flex items-start gap-4">
+<div class="font-bubble text-burgundy text-sm sm:text-base font-extrabold whitespace-nowrap min-w-[100px]">
+                  2026 – NOW
+                </div>
+<div class="w-1.5 h-1.5 rounded-full bg-burgundy mt-2 flex-shrink-0"></div>
+<div>
+<h3 class="font-bubble text-sm sm:text-base font-bold text-darkink">
+                    Institut Teknologi PLN (ITPLN) Jakarta
+                  </h3>
+<p class="text-xs sm:text-sm text-darkink/80">
+                    Bachelor of Information System · Faculty of Telematics and Energy
+                  </p>
+</div>
+</div>
+<!-- Line divider -->
+<div class="ml-12 border-l border-dashed border-burgundy/50 h-3"></div>
+<!-- SMA Negeri 11 Ambon -->
+<div class="flex items-start gap-4">
+<div class="font-bubble text-burgundy text-sm sm:text-base font-extrabold whitespace-nowrap min-w-[100px]">
+                  2023 – 2026
+                </div>
+<div class="w-1.5 h-1.5 rounded-full bg-burgundy mt-2 flex-shrink-0"></div>
+<div>
+<h3 class="font-bubble text-sm sm:text-base font-bold text-darkink">
+                    SMA Negeri 11 Ambon
+                  </h3>
+<p class="text-xs sm:text-sm text-darkink/80">
+                    High School Diploma · Mathematics &amp; Natural Sciences Track
+                  </p>
+</div>
+</div>
+</div>
+</article>
+<!-- END: PanelEducation -->
+</section>
+<!-- END: RightColumn -->
+</div>
+</main>
+<!-- END: TopPosterSheet -->
+<!-- ============================================== -->
+<!-- BELOW THE FOLD: Editorial Bands & Projects     -->
+<!-- ============================================== -->
+<!-- BEGIN: ProjectsSection -->
+<section class="mb-14" data-purpose="selected-projects">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 pb-2 border-b-2 border-burgundy">
+<div>
+<span class="font-caveat text-xl text-burgundy font-bold block mb-1">academic &amp; creative builds ✦</span>
+<h2 class="font-syne text-3xl sm:text-4xl font-extrabold text-burgundy tracking-tight">
+            SELECTED WORK &amp; PROJECTS
+          </h2>
+</div>
+<p class="text-xs sm:text-sm text-darkink/70 mt-1 sm:mt-0 font-medium max-w-sm">
+          A showcase of enterprise analysis, interactive mockups, and organizational initiatives.
+        </p>
+</div>
+<!-- Project Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<article class="bg-white border-1.5 border-burgundy p-5 rounded-sm shadow-[4px_4px_0px_#8E0E2B] flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="inline-block bg-starburst text-burgundy px-2.5 py-0.5 text-xs font-bold rounded-full uppercase tracking-wider font-bubble">
+                FINANCIAL SYSTEM
+              </span>
+<span class="text-xs font-mono font-semibold text-burgundy">2024</span>
+</div>
+<h3 class="font-bubble text-xl font-bold text-darkink mb-2">
+              Student Organization Treasury Ledger
+            </h3>
+<p class="text-xs sm:text-sm text-darkink/80 leading-relaxed mb-4">
+              Automated Google Sheets &amp; Excel accounting database designed for PMR youth chapter to track event cashflows, budget allocation forecasts, and proof-of-payment auditing.
+            </p>
+</div>
+<div class="pt-3 border-t border-burgundy/20 flex items-center justify-between">
+<span class="text-xs font-medium text-burgundy">Excel · Formulas · Reporting</span>
+<a class="font-bubble text-xs font-bold text-burgundy hover:text-darkink transition-colors flex items-center gap-1" href="#contact-footer">
+              VIEW DETAILS ↗
+            </a>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-white border-1.5 border-burgundy p-5 rounded-sm shadow-[4px_4px_0px_#8E0E2B] flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="inline-block bg-starburst text-burgundy px-2.5 py-0.5 text-xs font-bold rounded-full uppercase tracking-wider font-bubble">
+                UI/UX PROTOTYPE
+              </span>
+<span class="text-xs font-mono font-semibold text-burgundy">2025</span>
+</div>
+<h3 class="font-bubble text-xl font-bold text-darkink mb-2">
+              Campus Electricity &amp; Energy Monitor
+            </h3>
+<p class="text-xs sm:text-sm text-darkink/80 leading-relaxed mb-4">
+              Conceptual interactive dashboard created in Figma for ITPLN students to monitor laboratory power consumption, green energy savings, and reserve study slots.
+            </p>
+</div>
+<div class="pt-3 border-t border-burgundy/20 flex items-center justify-between">
+<span class="text-xs font-medium text-burgundy">Figma · Wireframing · UX Flow</span>
+<a class="font-bubble text-xs font-bold text-burgundy hover:text-darkink transition-colors flex items-center gap-1" href="#contact-footer">
+              VIEW DETAILS ↗
+            </a>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-white border-1.5 border-burgundy p-5 rounded-sm shadow-[4px_4px_0px_#8E0E2B] flex flex-col justify-between hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="inline-block bg-starburst text-burgundy px-2.5 py-0.5 text-xs font-bold rounded-full uppercase tracking-wider font-bubble">
+                DIGITAL MEDIA
+              </span>
+<span class="text-xs font-mono font-semibold text-burgundy">2024</span>
+</div>
+<h3 class="font-bubble text-xl font-bold text-darkink mb-2">
+              Health Awareness &amp; First Aid Campaign
+            </h3>
+<p class="text-xs sm:text-sm text-darkink/80 leading-relaxed mb-4">
+              Integrated visual identity campaign comprising infographic posters, social media carousels, and short educational video guides for regional youth healthcare events.
+            </p>
+</div>
+<div class="pt-3 border-t border-burgundy/20 flex items-center justify-between">
+<span class="text-xs font-medium text-burgundy">Canva · CapCut · Visuals</span>
+<a class="font-bubble text-xs font-bold text-burgundy hover:text-darkink transition-colors flex items-center gap-1" href="#contact-footer">
+              VIEW DETAILS ↗
+            </a>
+</div>
+</article>
+</div>
+</section>
+<!-- END: ProjectsSection -->
+<!-- BEGIN: AchievementsSection -->
+<section class="mb-14" data-purpose="achievements-and-competencies">
+<div class="flex items-center justify-between mb-6 pb-2 border-b-2 border-burgundy">
+<h2 class="font-syne text-2xl sm:text-3xl font-extrabold text-burgundy tracking-tight uppercase">
+          CORE COMPETENCIES &amp; HIGHLIGHTS
+        </h2>
+<span class="font-caveat text-lg font-bold text-burgundy hidden sm:inline-block">skills verified ✦</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+<!-- Competency Card 1 -->
+<div class="bg-paper border-1.5 border-burgundy p-5 rounded-sm relative">
+<div class="flex items-center gap-3 mb-2">
+<div class="starburst-badge bg-starburst text-burgundy w-9 h-9 flex items-center justify-center font-bold text-sm">
+              ★
+            </div>
+<h3 class="font-bubble text-lg font-bold text-burgundy">Financial Governance</h3>
+</div>
+<p class="text-xs sm:text-sm text-darkink/80 leading-relaxed">
+            Proficient in organizational fund allocation, operational ledger oversight, audit verification, and transparent reporting standards.
+          </p>
+</div>
+<!-- Competency Card 2 -->
+<div class="bg-paper border-1.5 border-burgundy p-5 rounded-sm relative">
+<div class="flex items-center gap-3 mb-2">
+<div class="starburst-badge bg-starburst text-burgundy w-9 h-9 flex items-center justify-center font-bold text-sm">
+              ★
+            </div>
+<h3 class="font-bubble text-lg font-bold text-burgundy">Systems Thinking</h3>
+</div>
+<p class="text-xs sm:text-sm text-darkink/80 leading-relaxed">
+            Foundations in database structuring, entity relationship modeling, business process documentation, and IT system life-cycles.
+          </p>
+</div>
+<!-- Competency Card 3 -->
+<div class="bg-paper border-1.5 border-burgundy p-5 rounded-sm relative">
+<div class="flex items-center gap-3 mb-2">
+<div class="starburst-badge bg-starburst text-burgundy w-9 h-9 flex items-center justify-center font-bold text-sm">
+              ★
+            </div>
+<h3 class="font-bubble text-lg font-bold text-burgundy">Visual Communication</h3>
+</div>
+<p class="text-xs sm:text-sm text-darkink/80 leading-relaxed">
+            Competent in digital storytelling, Figma UI mockups, infographics with Canva, and video post-production for engagement.
+          </p>
+</div>
+</div>
+</section>
+<!-- END: AchievementsSection -->
+<!-- BEGIN: ConnectFooter -->
+<footer class="bg-burgundy text-paper p-8 sm:p-12 rounded-sm shadow-xl relative overflow-hidden" data-purpose="footer-call-to-action" id="contact-footer">
+<!-- Decorative Halftone Dots in Footer -->
+<div aria-hidden="true" class="absolute inset-0 halftone-bg opacity-20 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+<div>
+<span class="font-caveat text-starburst text-2xl sm:text-3xl font-bold block mb-1">
+            Let's build something impactful together! ✦
+          </span>
+<h2 class="font-syne text-4xl sm:text-5xl font-black tracking-tight text-white uppercase">
+            LET'S CONNECT!
+          </h2>
+<p class="mt-2 text-paper/85 text-xs sm:text-sm max-w-md">
+            Open for academic collaborations, information systems research, student organization projects, and digital design work.
+          </p>
+</div>
+<!-- Interactive Sticker Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-4">
+<a class="bg-starburst hover:bg-yellow-300 text-burgundy font-bubble font-black text-sm sm:text-base px-6 py-3 rounded-full shadow-[3px_3px_0px_#2B1117] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_#2B1117] transition-all inline-flex items-center gap-2" href="mailto:nazwapatty4@gmail.com">
+<span>✉</span> Email Me
+          </a>
+<a class="bg-white/10 hover:bg-white/20 text-white border-1.5 border-white/60 font-bubble text-sm sm:text-base px-5 py-3 rounded-full transition-all inline-flex items-center gap-1.5" href="https://instagram.com/nazwasharifa" rel="noopener noreferrer" target="_blank">
+<span>@nazwaptty</span>
+</a>
+</div>
+</div>
+<!-- Bottom Line & Copyright -->
+<div class="relative z-10 mt-10 pt-6 border-t border-paper/20 flex flex-col sm:flex-row items-center justify-between text-xs text-paper/70 font-medium">
+<p>© 2026 Nazwa Sharifa Aprilia Patty (Wawa) · Information System · ITPLN Jakarta</p>
+<p class="mt-2 sm:mt-0 font-caveat text-starburst text-base">Inspired by Editorial Zine &amp; Graphic Poster Aesthetics</p>
+</div>
+</footer>
+<!-- END: ConnectFooter -->
+</div>
+<!-- END: MainContainer -->
+<!-- Interactive Sticker Tray Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const stickerWrappers = document.querySelectorAll('#sticker-grid > .group');
+    const toastText = document.getElementById('sticker-toast-text');
+    const calloutMap = {
+      'data-office': document.getElementById('callout-data-office'),
+      'ui-design': document.getElementById('callout-ui-design'),
+      'productivity': document.getElementById('callout-productivity')
+    };
+
+    stickerWrappers.forEach(wrapper => {
+      const btn = wrapper.querySelector('button');
+      const cat = wrapper.getAttribute('data-category');
+      const info = btn.getAttribute('data-info');
+
+      // Hover / Focus interactions
+      const handleEnter = () => {
+        if (calloutMap[cat]) {
+          calloutMap[cat].classList.add('callout-active');
+        }
+      };
+
+      const handleLeave = () => {
+        if (calloutMap[cat]) {
+          calloutMap[cat].classList.remove('callout-active');
+        }
+      };
+
+      wrapper.addEventListener('mouseenter', handleEnter);
+      wrapper.addEventListener('mouseleave', handleLeave);
+      btn.addEventListener('focus', handleEnter);
+      btn.addEventListener('blur', handleLeave);
+
+      // Click / Press dynamic feedback
+      btn.addEventListener('click', () => {
+        btn.classList.add('sticker-pressed');
+        setTimeout(() => btn.classList.remove('sticker-pressed'), 400);
+
+        if (toastText && info) {
+          toastText.textContent = `★ ${info} (Peeled!)`;
+          toastText.classList.add('bg-starburst', 'text-burgundy', 'scale-105');
+          setTimeout(() => {
+            toastText.classList.remove('scale-105');
+          }, 350);
+        }
+      });
+    });
+  });
+</script>
+
+
+</body></html>
